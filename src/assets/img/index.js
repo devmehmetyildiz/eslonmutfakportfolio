@@ -28,7 +28,18 @@ import projects from "./Projects.jpg"
 import Contact from "./Contact.jpg"
 import mebtrans from "./mebtrans.png"
 import Logo from "./Logo.png"
+import productslider1 from "./productslider1.jpeg"
+import productslider2 from "./productslider2.jpeg"
+import productslider3 from "./productslider3.jpeg"
+import productslider4 from "./productslider4.jpeg"
+import productslider5 from "./productslider5.jpeg"
+
 export default {
+    productslider1,
+    productslider2,
+    productslider3,
+    productslider4,
+    productslider5,
     Logo,
     bg,
     client1,

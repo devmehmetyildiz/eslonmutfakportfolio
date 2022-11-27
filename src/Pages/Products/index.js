@@ -15,8 +15,12 @@ export default function Index(props) {
     setTimeout(() => {
       setPageOpened(true)
       bodyfunc(true)
-    }, 500);
+    }, 1000);
   }, [])
+
+  
+
+
   return (
     <React.Fragment>
       {PageOpened ?

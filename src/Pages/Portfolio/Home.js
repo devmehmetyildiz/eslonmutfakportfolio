@@ -77,7 +77,7 @@ export function Home({ history }) {
         </div>
       </div> */}
       <div className='bg-white/60  p-4 rounded-3xl top-[30%] z-50  text-[#991900] w-1/3 absolute  right-[5vmin] md:right-[10vmin] lg:right-[25vmin] flex flex-col justify-center items-center'>
-        <h1 className='sm:text-lg md:text-xl lg:text-6xl text-right tracking-widest leading-[1.3em]'>YENİ WEB SİTEMİZLE HİZMETİNİZDEYİZ</h1>
+        <h1 className='text-[200%] text-center tracking-widest leading-[1.3em]'>YENİ WEB SİTEMİZLE HİZMETİNİZDEYİZ</h1>
         <p className='font-semibold mt-12 text-[16px] lg:text-[18px] text-right'>Sizlere en iyi hizmeti vermek için
           çağın önüne geçmeye devam ediyoruz.
         </p>
