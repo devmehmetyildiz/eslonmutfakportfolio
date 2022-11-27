@@ -71,7 +71,7 @@ export function Catalogs({ history }) {
 
   return (
     <div className='w-[100%]  mx-auto flex flex-col justify-center items-center '>
-      <h1 className='text-[1.0875em] lg:text-[1.6875em]  mx-auto lg:w-1/3 text-center lg:whitespace-nowrap mt-12 font-Common tracking-[0.32em] text-[#231f20] font-semibold'>YAPTIĞIMIZ <span className='text-[#991900]'>PROJELERİMİZ</span></h1>
+      <h1 className='text-[1.0875em] lg:text-[1.6875em]  mx-auto lg:w-1/3 text-center lg:whitespace-nowrap mt-12 font-Common tracking-[0.32em] text-[#231f20] font-semibold'>ÜRÜN <span className='text-[#991900]'>SETLERİMİZ</span></h1>
       <div className='hidden lg:block mt-20 w-[100%]'>
         <Slider  {...settings}>
           {slideritems.map(item => {
@@ -80,7 +80,7 @@ export function Catalogs({ history }) {
               <div className='overflow-hidden inline-block'>
                 <img className="group-hover:scale-125 transition-all ease-in-out duration-[2000ms]" src={item.img} alt={item.title} />
               </div>
-              <p className='-rotate-90 absolute bottom-0 left-0 mb-40 -ml-24 text-[10px]  font-bold whitespace-nowrap uppercase tracking-[1em] lg:tracking-[2vmin] opacity-1 group-hover:opacity-0 transition-all ease-in-out duration-1000 text-[#fff] '>ZDM OFİS</p>
+              <p className='-rotate-90 absolute bottom-0 left-0 mb-40 -ml-24 text-[10px]  font-bold whitespace-nowrap uppercase tracking-[1em] lg:tracking-[2vmin] opacity-1 group-hover:opacity-0 transition-all ease-in-out duration-1000 text-[#fff] '>ESLON MUTFAK</p>
               <div style={{ transform: 'translate(-50%,-50%)' }} className='absolute left-[50%] top-[50%] transition-all ease-in-out duration-1000 text-[0.4vmin] p-2 group-hover:text-[5vmin] cursor-pointer group-hover:opacity-50 rounded-full hover:bg-[#d99b54] bg-[#991900] opacity-0'
                 onClick={() => { history.push("/Project/" + item.Id) }}
               >
@@ -98,7 +98,7 @@ export function Catalogs({ history }) {
               <div className='overflow-hidden inline-block'>
                 <img className="group-hover:scale-125 transition-all ease-in-out duration-[2000ms]" src={item.img} alt={item.title} />
               </div>
-              <p className='-rotate-90 absolute bottom-0 left-0 mb-40 -ml-24 text-[10px]  font-bold whitespace-nowrap uppercase tracking-[1em] lg:tracking-[2vmin] opacity-1 group-hover:opacity-0 transition-all ease-in-out duration-1000 text-[#fff] '>ZDM OFİS</p>
+              <p className='-rotate-90 absolute bottom-0 left-0 mb-40 -ml-24 text-[10px]  font-bold whitespace-nowrap uppercase tracking-[1em] lg:tracking-[2vmin] opacity-1 group-hover:opacity-0 transition-all ease-in-out duration-1000 text-[#fff] '>ESLON MUTFAK</p>
               <div style={{ transform: 'translate(-50%,-50%)' }} className='absolute left-[50%] top-[50%] transition-all ease-in-out duration-1000 text-[0.4vmin] p-2 group-hover:text-[5vmin] cursor-pointer group-hover:opacity-50 rounded-full hover:bg-[#d99b54] bg-[#991900] opacity-0'
                 onClick={() => { history.push("/Project/" + item.Id) }}
               >
