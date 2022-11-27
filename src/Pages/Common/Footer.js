@@ -8,13 +8,14 @@ export default function Footer() {
       <h1 className='text-[1.0875em] lg:text-[1.6875em]  mx-auto lg:w-1/3 text-center lg:whitespace-nowrap mt-12 font-Common tracking-[0.32em] text-[#231f20] font-semibold'>İLETİŞİM  <span className='text-[#991900]'>BİLGİLERİ</span></h1>
       <div className='w-[100%] px-[18%] mt-20 flex flex-col lg:flex-row justify-between items-center'>
         <div className=' flex h-[100%] tracking-wide whitespace-nowrap pt-8  p-2 m-2 flex-col items-start justify-center text-[1.125em] text-[#747474] max-h-[7em] leading-[1.7]'>
-          <p>+ 90 532 690 78 55</p>
-          <p>info@zdmofis.com.tr</p>
-          <p>pazarlama@zdmofis.com.tr</p>
-          <h1>Şehit Abdullah Çavuş Mahallesi</h1>
-          <h1>Adil Erdem Beyazıt Caddesi</h1>
-          <h1>NO: 139 / A  46100 </h1>
-          <h1>Onikişubat/Kahramanmaraş</h1>
+          <p>Telefon: +90 (344) 257 93 30</p>
+          <p>Fax: +90 (344) 257 93 76</p>
+
+          <p>info@eslonmutfak.com.tr</p>
+          
+          <h1>Organize Sanayi Bölgesi 3. Cd. No:3</h1>
+          <h1>Onikişubat / KAHRAMANMARAŞ</h1>
+          
         </div>
         <div className='mt-20 lg:mt-0 flex  flex-col lg:flex-row justify-center items-center'>
           <div className='flex flex-col justify-center items-center h-[100%]'>
@@ -44,7 +45,7 @@ export default function Footer() {
           by ARMS TEKNOLOJİ
         </a>
         <p className='font-Common  text-[12px] line-none text-[#d0d0d0] cursor-default'>
-          © ZDM OFİS 2022. Tüm Hakları Saklıdır.
+          © Eslon Mutfak 2022. Tüm Hakları Saklıdır.
         </p>
       </div>
     </div>
