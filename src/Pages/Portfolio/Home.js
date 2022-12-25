@@ -29,14 +29,14 @@ export function Home({ history }) {
 
   const slideritems = [
     {
-      Id: 1,
-      img: img.slide1,
-      title: "A PROJEMİZ"
-    },
-    {
       Id: 2,
       img: img.slide2,
       title: "B PROJEMİZ"
+    },
+    {
+      Id: 1,
+      img: img.slide1,
+      title: "A PROJEMİZ"
     },
     {
       Id: 3,
@@ -45,7 +45,7 @@ export function Home({ history }) {
     },
     {
       Id: 4,
-      img: img.slide2,
+      img: img.slide4,
       title: "D PROJEMİZ"
     },
   ]
@@ -96,8 +96,8 @@ export function Home({ history }) {
           <AiOutlineLinkedin className='mb-4 hover:text-[#991900] transition-all ease-in-out duration-300 cursor-pointer text-[2.4vmin] text-[#c5c4c2] mt-[3.8vmin]' />
         </div>
       </div>
-      <div className='hidden md:hidden z-50 lg:visible absolute lg:left-[25%] md:left-[35%] sm:left-[45%] top-[11vmin] w-[60%] lg:flex flex-row justify-between items-center'>
-        <p className='font-Common font-light text-[0.75em] mr-4 tracking-[0.22em] text-[#231f20]'>0 532 690 78 55</p>
+      <div className='whitespace-nowrap hidden md:hidden z-50 lg:visible absolute lg:left-[25%] md:left-[35%] sm:left-[45%] top-[11vmin] w-[60%] lg:flex flex-row justify-between items-center'>
+        <p className='font-Common font-light text-[0.75em] mr-4 tracking-[0.22em] text-[#231f20]'>ESGROUP©</p>
         <div className=' lg:flex flex-row justify-center items-center  font-light text-[0.75em]  cursor-pointer tracking-[0.22em]'>
           <a className='cursor-pointer text-[#231f20] mr-[8vmin] hover:text-[#991900] font-Common' onClick={() => { history.push('/') }}>ESLON MUTFAK</a>
           <a className='cursor-pointer text-[#231f20] mr-[8vmin] hover:text-[#991900] font-Common' onClick={() => { history.push('/AboutUs') }}>BİZ KİMİZ</a>
@@ -121,7 +121,7 @@ function SampleNextArrow(props) {
   const { className, style, onClick } = props;
   return (
     <div
-      className='flex flex-row flex-nowrap justify-center items-center hover:text-[#991900] text-[#c5c4c2] transition-all ease-in-out duration-300 cursor-pointer'
+      className='bg-white/60  p-4 rounded-3xl flex flex-row flex-nowrap justify-center items-center hover:text-[#991900] text-[#9b9b9b] transition-all ease-in-out duration-300 cursor-pointer'
       style={{ position: 'absolute', left: '20%', bottom: '50%', zIndex: 2 }}
       onClick={onClick}
     >
@@ -135,7 +135,7 @@ function SamplePrevArrow(props) {
   const { className, style, onClick } = props;
   return (
     <div
-      className='flex flex-row flex-nowrap justify-center items-center hover:text-[#991900] text-[#c5c4c2] transition-all ease-in-out duration-300 cursor-pointer'
+      className='bg-white/60  p-4 rounded-3xl flex flex-row flex-nowrap justify-center items-center hover:text-[#991900] text-[#9b9b9b] transition-all ease-in-out duration-300 cursor-pointer'
       style={{ position: 'absolute', left: '11%', bottom: '50%', zIndex: 2 }}
       onClick={onClick}
     >

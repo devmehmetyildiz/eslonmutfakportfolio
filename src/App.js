@@ -27,8 +27,8 @@ export const App = (props) => {
         <Route exact path="/AboutUs" render={(props) => <Aboutus {...props} bodyfunc={setshowBody} />} />
         <Route exact path="/Catalogs" render={(props) => <Catalogs {...props} bodyfunc={setshowBody} />} />
         <Route exact path="/Catalogs/:ID" render={(props) => <Catalogsdetail {...props} bodyfunc={setshowBody} />} />
-        <Route exact path="/Products" render={(props) => <Products {...props} bodyfunc={setshowBody} />} />
-        <Route exact path="/Products/:ID" render={(props) => <ProductDetail {...props} bodyfunc={setshowBody} />} />
+       {/*  <Route exact path="/Products" render={(props) => <Products {...props} bodyfunc={setshowBody} />} />
+        <Route exact path="/Products/:ID" render={(props) => <ProductDetail {...props} bodyfunc={setshowBody} />} /> */}
         <Route exact path="/Contacts" render={(props) => <Contact {...props} bodyfunc={setshowBody} />} />
         <Redirect to="/" />
       </Switch>

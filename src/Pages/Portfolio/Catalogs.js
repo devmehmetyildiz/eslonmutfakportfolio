@@ -33,42 +33,42 @@ export function Catalogs({ history }) {
     {
       Id: 1,
       img: img.productslider1,
-      title: "A PROJEMİZ"
+      title: "A Seti"
     },
     {
       Id: 2,
       img: img.productslider2,
-      title: "B PROJEMİZ"
+      title: "B Seti"
     },
     {
       Id: 3,
       img: img.productslider3,
-      title: "C PROJEMİZ"
+      title: "C Seti"
     },
     {
       Id: 4,
       img: img.productslider4,
-      title: "D PROJEMİZ"
+      title: "D Seti"
     },
     {
       Id: 5,
       img: img.productslider5,
-      title: "E PROJEMİZ"
+      title: "E Seti"
     },
     {
       Id: 6,
-      img: img.productslider1,
-      title: "F PROJEMİZ"
+      img: img.productslider3,
+      title: "F Seti"
     },
     {
       Id: 7,
       img: img.productslider2,
-      title: "G PROJEMİZ"
+      title: "G Seti"
     },
     {
       Id: 8,
-      img: img.productslider3,
-      title: "H PROJEMİZ"
+      img: img.productslider4,
+      title: "H Seti"
     },
 
   ]
@@ -79,17 +79,14 @@ export function Catalogs({ history }) {
       <div className='hidden lg:block mt-20 w-[100%]'>
         <Slider  {...settings}>
           {slideritems.map(item => {
-            return <div
-              key={item} className='relative group w-full flex justify-center items-center'>
-              <h2 className='top-20 group-hover:top-40 opacity-1 group-hover:opacity-0  absolute left-8 w-1/2  font-Common text-[] md:text-[0.9em] lg:text-[1.2em] leading-[1.75] tracking-[0.17em] text-[#fff]'>{item.title}</h2>
-              <div className='h-[800px] w-full  overflow-hidden  flex justify-center items-center relative'>
-                <img className="h-[800px] w-auto object-none  transition-all ease-in-out duration-[2000ms] " src={item.img} alt={item.title} >
-                </img>
-                <button className='absolute right-0 top-0 ' onClick={() => { setslidercount(4) }}>kapat</button>
+            return <div key={item} className='relative group'>
+              <h2 className='top-20 group-hover:top-40 opacity-1 group-hover:opacity-0 transition-all ease-in-out duration-1000 absolute left-8 w-1/2  font-Common text-[] md:text-[0.9em] lg:text-[1.2em] leading-[1.75] tracking-[0.17em] text-[#991900]'>{item.title}</h2>
+              <div className='h-[800px] overflow-hidden inline-block'>
+                <img className="h-[800px] object-none group-hover:scale-125 transition-all ease-in-out duration-[2000ms]" src={item.img} alt={item.title} />
               </div>
-              <p className='-rotate-90 absolute bottom-0 left-0 mb-40 -ml-24 text-[10px]  font-bold whitespace-nowrap uppercase tracking-[1em] lg:tracking-[2vmin] opacity-1 group-hover:opacity-0 transition-all ease-in-out duration-1000 text-[#fff] '>ESLON MUTFAK</p>
-              <div style={{ transform: 'translate(-50%,-50%)' }} className='absolute left-[50%] top-[50%] transition-all ease-in-out duration-1000 text-[0.4vmin] p-2 group-hover:text-[5vmin] cursor-pointer group-hover:opacity-50 rounded-full hover:bg-[#d99b54] bg-[#991900] opacity-0'
-                onClick={() => { }}
+              <p className='-rotate-90 absolute bottom-0 left-0 mb-40 -ml-24 text-[10px]  font-bold whitespace-nowrap uppercase tracking-[1em] lg:tracking-[2vmin] opacity-1 group-hover:opacity-0 transition-all ease-in-out duration-1000 text-[#991900] '>ESLON MUTFAK</p>
+              <div style={{ transform: 'translate(-50%,-50%)' }} className='absolute left-[50%] top-[50%] transition-all ease-in-out duration-1000 text-[0.4vmin] p-2 group-hover:text-[5vmin] cursor-pointer group-hover:opacity-50 rounded-full hover:bg-[#9919009a] bg-[#991900] opacity-0'
+                onClick={() => { history.push("/Project/" + item.Id) }}
               >
                 <FaSearchMinus className='m-2 text-[#fff] group-hover:opacity-1' icon={faMagnifyingGlassPlus} />
               </div>
@@ -101,12 +98,12 @@ export function Catalogs({ history }) {
         <Slider  {...settingssmallscren}>
           {slideritems.map(item => {
             return <div key={item} className='relative group'>
-              <h2 className='top-20 group-hover:top-40 opacity-1 group-hover:opacity-0 transition-all ease-in-out duration-1000 absolute left-8 w-1/2  font-Common text-[] md:text-[0.9em] lg:text-[1.2em] leading-[1.75] tracking-[0.17em] text-[#fff]'>{item.title}</h2>
-              <div className='overflow-hidden inline-block'>
-                <img className="group-hover:scale-125 transition-all ease-in-out duration-[2000ms]" src={item.img} alt={item.title} />
+              <h2 className='top-20 group-hover:top-40 opacity-1 group-hover:opacity-0 transition-all ease-in-out duration-1000 absolute left-8 w-1/2  font-Common text-[] md:text-[0.9em] lg:text-[1.2em] leading-[1.75] tracking-[0.17em] text-[#991900]'>{item.title}</h2>
+              <div className='h-[800px] overflow-hidden inline-block'>
+                <img className="h-[800px] object-none group-hover:scale-125 transition-all ease-in-out duration-[2000ms]" src={item.img} alt={item.title} />
               </div>
-              <p className='-rotate-90 absolute bottom-0 left-0 mb-40 -ml-24 text-[10px]  font-bold whitespace-nowrap uppercase tracking-[1em] lg:tracking-[2vmin] opacity-1 group-hover:opacity-0 transition-all ease-in-out duration-1000 text-[#fff] '>ESLON MUTFAK</p>
-              <div style={{ transform: 'translate(-50%,-50%)' }} className='absolute left-[50%] top-[50%] transition-all ease-in-out duration-1000 text-[0.4vmin] p-2 group-hover:text-[5vmin] cursor-pointer group-hover:opacity-50 rounded-full hover:bg-[#d99b54] bg-[#991900] opacity-0'
+              <p className='-rotate-90 absolute bottom-0 left-0 mb-40 -ml-24 text-[10px]  font-bold whitespace-nowrap uppercase tracking-[1em] lg:tracking-[2vmin] opacity-1 group-hover:opacity-0 transition-all ease-in-out duration-1000 text-[#991900] '>ESLON MUTFAK</p>
+              <div style={{ transform: 'translate(-50%,-50%)' }} className='absolute left-[50%] top-[50%] transition-all ease-in-out duration-1000 text-[0.4vmin] p-2 group-hover:text-[5vmin] cursor-pointer group-hover:opacity-50 rounded-full hover:bg-[#9919009a] bg-[#991900] opacity-0'
                 onClick={() => { history.push("/Project/" + item.Id) }}
               >
                 <FaSearchMinus className='m-2 text-[#fff] group-hover:opacity-1' icon={faMagnifyingGlassPlus} />

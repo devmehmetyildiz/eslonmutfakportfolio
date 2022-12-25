@@ -7,68 +7,58 @@ export function Catalogs({ history }) {
 
   const slideritems = [
     {
-      Id: 1,
-      img: img.project1,
-      title: "A Projesi"
+      title: 'TÜRKÇE KATALOG',
+      img: img.katalogTR,
+      url: 'Katalog/katalogTR.pdf'
     },
     {
-      Id: 2,
-      img: img.project2,
-      title: "B Projesi"
+      title: 'ENGLISH CATALOG',
+      img: img.katalogEN,
+      url: 'Katalog/katalogEN.pdf'
     },
     {
-      Id: 3,
-      img: img.project3,
-      title: "C Projesi"
+      title: 'كتالوج عربي',
+      img: img.katalogAR,
+      url: 'Katalog/katalogAR.pdf'
     },
     {
-      Id: 4,
-      img: img.project4,
-      title: "D Projesi"
+      title: 'DEUTSCHER KATALOG',
+      img: img.katalogDe,
+      url: 'Katalog/katalogDE.pdf'
     },
     {
-      Id: 5,
-      img: img.project5,
-      title: "E Projesi"
+      title: 'CATALOGUE FRANÇAIS',
+      img: img.katalogFR,
+      url: 'Katalog/katalogFR.pdf'
     },
     {
-      Id: 6,
-      img: img.project6,
-      title: "F Projesi"
+      title: 'РОССИЙСКИЙ КАТАЛОГ',
+      img: img.katalogRU,
+      url: 'Katalog/katalogRU.pdf'
     },
     {
-      Id: 7,
-      img: img.project7,
-      title: "G Projesi"
+      title: 'ΕΛΛΗΝΙΚΟΣ ΚΑΤΑΛΟΓΟΣ',
+      img: img.katalogYUN,
+      url: 'Katalog/katalogGRE.pdf'
     },
     {
-      Id: 8,
-      img: img.project8,
-      title:"H Projesi"
+      title: 'POLSKİ KATALOG',
+      img: img.katalogPOL,
+      url: 'Katalog/katalogPOL.pdf'
     },
-
   ]
 
   return (
-    <div className='mt-12 w-full grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-0'>
+    <div className='mt-12 w-full grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4'>
       {slideritems.map(item => {
-        return <div className='relative group'>
-          <h2 className='top-20 group-hover:top-40 opacity-1 group-hover:opacity-0 transition-all ease-in-out duration-1000 absolute left-8 w-1/2  font-Common md:text-[0.9em] lg:text-[1.2em] leading-[1.75] tracking-[0.17em] text-[#fff]'>{item.title}</h2>
-          <div className='overflow-hidden inline-block'>
-            <img className="group-hover:scale-125 transition-all ease-in-out duration-[2000ms]" src={item.img} alt={item.title} />
+        return <a key={item} href={item.url} target="_blank" rel="noopener noreferrer">
+          <div className='group flex flex-col justify-center items-center w-full' >
+            <h5 className='text-[#231f20]  group-hover:text-[#991900] text-xl font-Common font-semibold transition-all ease-in-out duration-500'>{item.title}</h5>
+            <img className='w-2/3 hover:opacity-100 cursor-pointer transition-all ease-in-out duration-500 opacity-50' src={item.img} alt="" />
           </div>
-          <p className='-rotate-90 absolute bottom-0 left-0 mb-40 -ml-24 text-[10px]  font-bold whitespace-nowrap uppercase tracking-[1em] lg:tracking-[2vmin] opacity-1 group-hover:opacity-0 transition-all ease-in-out duration-1000 text-[#fff] '>ZDM OFFICE</p>
-          <div className='absolute bottom-[41%] left-[50%] transition-all ease-in-out duration-1000 -translate-y-1/2 -translate-x-1/2 p-4 group-hover:p-8 cursor-pointer group-hover:opacity-50 rounded-full hover:bg-[#d99b54] bg-[#991900] opacity-0'
-            onClick={() => {
-              //console.log("geldim")
-             // history.push("/Projects/" + item.Id)
-            }}
-          >
-            <FontAwesomeIcon className='text-[2.4vmin] text-[#fff] group-hover:opacity-1' icon={faMagnifyingGlassPlus} />
-          </div>
-        </div>
+        </a>
       })}
-    </div>
+    </div >
   )
 }
 export default withRouter(Catalogs)

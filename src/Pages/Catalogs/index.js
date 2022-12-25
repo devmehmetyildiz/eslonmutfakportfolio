@@ -25,7 +25,7 @@ export default function Index(props) {
           animate={{ opacity: 1 }}
           transition={{ ease: "easeOut", duration: 2 }}
         >
-          <Title bg={img.projects} title={"Sezon Kataloglarımız"} isImg={true} />
+          <Title  title={"Sezon Kataloglarımız"} isImg={false} />
           <Catalogs />
         </motion.div>
         : <Loader />

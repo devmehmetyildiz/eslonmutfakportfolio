@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import Title from '../Common/Title'
 import Aboutus from './Aboutus'
+import Vision from './Vision'
 import Services from './Services'
 import Map from './Map'
 import { motion } from 'framer-motion'
@@ -28,8 +29,9 @@ export default function Index(props) {
                     animate={{ opacity: 1 }}
                     transition={{ ease: "easeOut", duration: 2 }}
                 >
-                    <Title bg={img.Aboutus} title={"ESLON MUTFAK NE YAPAR?"} isImg={true} />
+                    <Title  title={"ESLON MUTFAK NE YAPAR?"} isImg={false} />
                     <Aboutus />
+                    <Vision />
                     <Services />
                     <Map />
                 </motion.div>

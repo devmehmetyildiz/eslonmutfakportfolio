@@ -26,7 +26,7 @@ export default function Index(props) {
                     animate={{ opacity: 1 }}
                     transition={{ ease: "easeOut", duration: 2 }}
                 >
-                    <Title bg={img.Contact} title={"İletişim"} isImg={true} />
+                    <Title  title={"İletişim"} isImg={false} />
                     <Googlemap />
                     <Map />
                 </motion.div>

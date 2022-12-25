@@ -39,11 +39,11 @@ export function Header({ history }) {
                         {showmenu ? <AiOutlineCloseCircle className='absolute right-10 top-10 ml-8 text-[#231f20]' fontSize={27} onClick={() => { setshowmenu(false) }} /> : null}
                         <div className='p-2 flex flex-row flex-nowrap' >
                             <a className='font-Common font-bold text-[1.77em] line-none text-[#231f20] '>
-                                eslon
-                                <span className='text-[#991900]'>mutfak</span>
+                                Eslon
+                                <span className='text-[#991900]'>Mutfak</span>
                             </a>
                         </div >
-                        <ul className='hidden lg:flex flex-row justify-center uppercase items-center font-Common tracking-[0.22em] text-[0.77em] leading-[1.65] font-normal text-[#231f20] '>
+                        <ul className='whitespace-nowrap hidden lg:flex flex-row justify-center uppercase items-center font-Common tracking-[0.22em] text-[0.77em] leading-[1.65] font-normal text-[#231f20] '>
                             <li className="mx-8 flex flex-col group"><a className='cursor-pointer group-hover:text-[#991900]' onClick={() => { history.push('/') }}>ANA SAYFA</a> <div className='bg-[#991900] group-hover:w-[100%] w-[0px] group-hover:border-[1px] transition-all ease-in-out duration-300 border-[#991900]' /></li>
                             <li className="mx-8 flex flex-col group"><a className='cursor-pointer group-hover:text-[#991900]' onClick={() => { history.push('/AboutUs') }} >BİZ KİMİZ?</a><div className='bg-[#991900] group-hover:w-[100%] w-[0px] group-hover:border-[1px] transition-all ease-in-out duration-300 border-[#991900]' /></li>
                             <li className="mx-8 flex flex-col group"><a className='cursor-pointer group-hover:text-[#991900]' onClick={() => { history.push('/Catalogs') }}>KATALOGLARIMIZ</a><div className='bg-[#991900] group-hover:w-[100%] w-[0px] group-hover:border-[1px] transition-all ease-in-out duration-300 border-[#991900]' /></li>

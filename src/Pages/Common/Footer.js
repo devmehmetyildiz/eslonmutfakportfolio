@@ -38,8 +38,8 @@ export default function Footer() {
       </div>
       <div className='flex my-12 flex-col lg:flex-row  justify-between items-center w-[100%] lg:px-[23%]'>
         <a className='font-Common font-bold cursor-pointer text-[4vmin] line-none text-[#231f20]'>
-          eslon
-          <span className='text-[#991900]'>mutfak</span>
+          Eslon
+          <span className='text-[#991900]'>Mutfak</span>
         </a>
         <a className='font-Common  text-[12px] line-none cursor-pointer text-[#d0d0d0] hover:text-[#991900]'>
           by ARMS TEKNOLOJİ
